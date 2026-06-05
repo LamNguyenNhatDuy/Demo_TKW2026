@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Thử Nghiệm HTML DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bản Demo Các Tính Năng Core HTML DOM</h1>
+        <p id="welcome-text">@110124047-Duy Lâm</p>
+        
+        <hr>
+
+        <section class="demo-section">
+            <h2>1. Thao tác Nội dung & Style</h2>
+            
+            <p id="gender-title" style="font-weight: bold; color: #7f8c8d;">Vui lòng chọn giới tính của bạn:</p>
+            <div class="button-group" style="margin-bottom: 15px;">
+                <button id="btn-male">Nam</button>
+                <button id="btn-female">Nữ</button>
+            </div>
+
+            <button id="btn-toggle-theme" class="btn-secondary">Bật/Tắt Chế Độ Tối (Đổi Màu Web)</button>
+        </section>
+
+        <section class="demo-section">
+            <h2>2.Hiển thị trực tiếp</h2>
+            <input type="text" id="input-mirror" placeholder="Nhập nội dung nào đó vào đây...">
+            <p class="preview-box">Kết quả trực tiếp: <span id="mirror-output">...</span></p>
+        </section>
+
+        <section class="demo-section">
+            <h2>3. DOM Động (Thêm & Xóa Phần Tử)</h2>
+            <div class="todo-input-group">
+                <input type="text" id="todo-input" placeholder="Nhập công việc mới...">
+                <button id="btn-add-todo" disabled>Thêm Việc</button>
+            </div>
+            <ul id="todo-list">
+                <li class="todo-item">Công việc mẫu 1 (Bấm vào đây để xóa)</li>
+                <li class="todo-item">Công việc mẫu 2 (Bấm vào đây để xóa)</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

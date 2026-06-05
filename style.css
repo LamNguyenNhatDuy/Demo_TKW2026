@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --primary-color: #3498db;
+    --danger-color: #e74c3c;
+}
+
+/* KỸ THUẬT 6: Giữ nguyên class giao diện tối để đổi màu nền web */
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f7f6;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.demo-section {
+    margin: 25px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+body.dark-theme .demo-section {
+    border-color: #444;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#btn-male { background-color: #2980b9; }
+#btn-female { background-color: #e84393; }
+
+/* CSS cho nút đổi màu web */
+.btn-secondary {
+    background-color: #9b59b6; 
+    width: 100%;
+    margin-top: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.todo-input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+}
+
+.preview-box {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 8px;
+    border-left: 4px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+}
+
+.todo-item:hover {
+    background: #f1c40f;
+    border-left-color: var(--danger-color);
+}
